@@ -1,21 +1,24 @@
 CREATE TABLE publisher (
-    id serial primary key,
+    id integer primary key autoincrement,
     name text,
     country text
 );
 
 CREATE TABLE books (
-    id serial primary key,
+    id integer primary key autoincrement,
     title text,
-    publisher serial references publisher(id)
+    publisher integer,
+    foreign key (publisher) references publisher(id)
 );
 
 CREATE TABLE subjects (
-    id serial primary key,
+    id integer primary key autoincrement,
     name text
 );
 
 CREATE TABLE books_subjects (
-    book serial references books(id),
-    subject serial references subjects(id)
+    book integer,
+    subject integer,
+    foreign key (books) references books(id),
+    foreign key (subject) references subjects(id)
 );
