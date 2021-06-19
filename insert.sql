@@ -5,7 +5,7 @@ INSERT INTO subjects(name) VALUES ('Technology');
 INSERT INTO subjects(name) VALUES ('Go');
 INSERT INTO subjects(name) VALUES ('Productivity');
 INSERT INTO subjects(name) VALUES ('Psychology');
-INSERT INTO subjects(name) VALUES ('Science Fiction,');
+INSERT INTO subjects(name) VALUES ('Science Fiction');
 INSERT INTO subjects(name) VALUES ('Politics');
 INSERT INTO subjects(name) VALUES ('History');
 
